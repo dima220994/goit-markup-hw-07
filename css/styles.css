@@ -227,6 +227,7 @@ img {
 
     .address-item:not(:last-child) {
         margin-right: 40px;
+        margin-bottom: 0px;
     }
 
     .address.link {
@@ -696,6 +697,26 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (max-width:427px) {
+    .list-social-links-mob {
+        gap: 32px;
+        display: flex;
+    }
+
+
+
+}
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
+    .list-social-links-mob {
+        gap: 56px;
+        display: flex;
+    }
+
+}
+
+
+
 @media screen and (max-width: 767px) {
     .employee-card:not(:last-child) {
         margin-bottom: 72px;
@@ -735,6 +756,7 @@ img {
     justify-content: center;
     gap: 24px;
 }
+
 
 .social-links-item {
     width: 40px;
@@ -1330,7 +1352,7 @@ img {
 .portfolio-button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
@@ -1341,6 +1363,12 @@ img {
     padding: 12px 24px;
     transition: background-color var(--transition), color var(--transition),
         box-shadow var(--transition), border-color var(--transition);
+}
+
+@media screen and (min-width:428px) {
+    .portfolio-button {
+        font-size: 16px;
+    }
 }
 
 .portfolio-button:hover,
@@ -1410,11 +1438,17 @@ img {
 
 .cart-title {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-background-color);
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 428px) {
+    .cart-title {
+        font-size: 20px;
+    }
 }
 
 .card-text {
